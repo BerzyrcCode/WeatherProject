@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="" ng-app="WeatherApp">
+
+<head>
+	<title>Title Page</title>
+	<meta charset="UTF-8">
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS -->
+
+	<link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- AngularJS -->
+	<script src="angular.min.js"></script>
+
+	<script src="app.js"></script>
+
+</head>
+
+<body>
+	<div class="navbar-header">
+		<!--	<div class="col-md-offset-8"></div>
+			<div class="col-md-4"><a class="navbar-brand text-right" href="#">Fork Me on Git Hub</a> -->
+	</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Get your Weather</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active">
+					<a href="#"></a>
+				</li>
+				<li>
+					<a href="#about"></a>
+				</li>
+				<li>
+					<a href="#contact"></a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						</b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Action</a>
+						</li>
+						<li><a href="#">Another action</a>
+						</li>
+						<li><a href="#">Something else here</a>
+						</li>
+						<li class="divider"></li>
+						<li class="dropdown-header">Nav header</li>
+						<li><a href="#">Separated link</a>
+						</li>
+						<li><a href="#">One more separated link</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container" ng-controller="WeatherCtrl">
+		<div class="row">
+
+			<h3> Your Location is </h3>
+			<p>Your Latitude is: {{location.lat}}</p>
+			<p>Your Longitude is: {{location.lon}}</p>
+
+			<h3> The Weather in your area is.</h3>
+
+			<h1>{{weather.data.main.temp}} &deg;C</h1>
+			<h1> There will most likely be {{weather.data.weather.0.description}}</h1>
+			{{message}}
+
+
+
+
+
+
+		</div>
+
+	</div>
+	<!-- jQuery -->
+	<script src="//code.jquery.com/jquery.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js'></script>
+</body>
+
+</html>
